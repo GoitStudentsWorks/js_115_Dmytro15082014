@@ -20,6 +20,11 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: #f0f0f0;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.change-color{
+  background-color: #1E2023;
 }
 
 main {
