@@ -1,3 +1,67 @@
 <section id="work-together">
-  <div class="container"></div>
+  <div class="container">
+    <div class="contact-us">
+      <h2 class="h2-contact-us">LET'S WORK TOGETHER</h2>
+      <div class="contact-body">
+        <div class="info-window">
+          <p class="contact-text">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+          <form class="contact-form">
+            <div class="contact-row">
+              <label for="user-email"></label>
+              <input
+                type="email"
+                name="user-email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                id="user-email"
+                class="contact-input"
+                placeholder="Your email*"
+                required
+              />
+            </div>
+            <div class="contact-row-comment">
+              <label for="user-comment"></label>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="contact-textarea"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button class="button-send" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+        <picture
+          ><source
+            srcset="
+              /img/contact_us/contact_desk@1x.jpg 1x,
+              /img/contact_us/contact_desk@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /img/contact_us/contact_tab@1x.jpg 1x,
+              /img/contact_us/contact_tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/contact_us/contact_mob@1x.jpg 1x,
+              /img/contact_us/contact_mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/img/contact_us/contact_desk@1x.jpg"
+            height="300"
+            alt="contact-us-image"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,0 +1,154 @@
+/* Footer styles. */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-logo {
+  color: #000000;
+}
+
+.footer-fixed {
+  padding: 40px 28px 28px 28px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.footer-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 92px;
+}
+
+.footer-main {
+  margin-bottom: 40px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.footer-menu-item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #000000;
+  max-width: 83px;
+}
+
+.footer-down {
+  display: flex;
+  gap: 49px;
+  margin-bottom: 24px;
+}
+
+.footer-line {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  margin-bottom: 24px;
+}
+
+.regulation-menu {
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.regulation-menu-item:first-child {
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 86px;
+  }
+
+  .footer-text {
+    font-size: 28px;
+    line-height: 114%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+  }
+
+  .footer-logo {
+    font-size: 20px;
+  }
+
+  .footer-fixed {
+    padding: 40px 40px 28px 40px;
+    border-radius: 50px;
+  }
+
+  .footer-menu-item {
+    max-width: 162px;
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .footer-menu {
+    gap: 19px;
+  }
+
+  .footer-down {
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .footer-line {
+    margin-bottom: 28px;
+  }
+
+  .regulation-menu {
+    font-size: 14px;
+    line-height: 129%;
+    gap: 20px;
+  }
+
+  .regulation-menu-item:first-child {
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 32px;
+  }
+
+  .footer-text {
+    max-width: 523px;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-fixed {
+    position: relative;
+  }
+
+  .footer-main {
+    margin-bottom: 142px;
+  }
+}
