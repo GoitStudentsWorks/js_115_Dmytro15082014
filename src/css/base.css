@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: "Impact";
+  src: url("/src/fonts/impact.ttf");
+}
 
 body {
   display: flex;
@@ -27,6 +31,14 @@ body {
   background-color: #1E2023;
 }
 
+.accent-light{
+  color: #00B068;
+}
+
+.accent-dark{
+  color: #14C57C;
+}
+
 main {
   flex-grow: 1;
 }
@@ -34,7 +46,3 @@ main:has(.back-link) {
   text-align: center;
 }
 
-@font-face {
-  font-family: "Impact";
-  src: url("/src/fonts/impact.ttf");
-}
