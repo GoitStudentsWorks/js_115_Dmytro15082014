@@ -1,0 +1,15 @@
+.reviews-title{
+    font-size: 52px;
+    
+    /* line-height: 64px; */ 
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+
+    padding:  0px 83px;
+}
+
+.reviews-section{
+    margin-top: 40px;
+}
