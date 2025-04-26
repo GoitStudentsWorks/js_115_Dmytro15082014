@@ -10,8 +10,8 @@
 
 .footer-fixed {
   padding: 40px 28px 28px 28px;
-  border-radius: 30px;
-  background-color: #ffffff;
+  border-radius: 0px;
+  /* background-color: #ffffff; */
 }
 
 .footer-text {
