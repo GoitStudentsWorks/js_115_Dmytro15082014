@@ -1,15 +1,74 @@
 .reviews-title{
     font-size: 52px;
     
-    /* line-height: 64px; */ 
     line-height: 1.23077;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
 
-    padding:  0px 83px;
+    display: flex;
+    justify-content: center;
 }
 
 .reviews-section{
     margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 16px;
+    padding: 32px;
+    height: 232px;
+    background-color: #e4e5e6;
+}
+
+section#reviews .swiper{
+    padding: 32px;
+}
+
+section#reviews .swiper-button-prev{
+   /* color: tomato;*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.review-cart{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+/* line-height: 24px; */ 
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.review-text{
+    padding-bottom: 24px;
+}
+
+.review-autor{
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-title{
+        font-size: 108px;
+
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
+
+    }
+    .reviews-section{
+        margin-top: 60px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (min-width: 128px) {
+    .reviews-section{
+        margin-top: 80px;
+    }
 }
