@@ -24,16 +24,38 @@ section#reviews .swiper{
     padding: 32px;
 }
 
-section#reviews .swiper-button-prev{
-   /* color: tomato;*/
+section#reviews .swiper-button-prev
+{
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+   /* color: #e4e5e6*/
+   top: var(--swiper-navigation-top-offset, 448px);
+   left: auto;
+   right: var(--swiper-navigation-sides-offset, 96px);
 }
 
+section#reviews .swiper-button-next
+{
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 8px;
+    width: 24px;
+    height: 24px;
+   /* color: tomato;*/
+   top: var(--swiper-navigation-top-offset, 448px);
+   right: var(--swiper-navigation-sides-offset, 40px);
+}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
 }
 
 .review-cart{
+    display: flex;
+    flex-direction: column;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -42,6 +64,19 @@ section#reviews .swiper-button-prev{
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
+}
+
+.review-bottom{
+    display: flex;
+    align-items: center;
+    gap: 16px;    
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #bcdfd1;
 }
 
 .review-text{
@@ -65,10 +100,32 @@ section#reviews .swiper-button-prev{
         margin-left: 32px;
         margin-right: 32px;
     }
+
+    .swiper{
+        height: 160px;
+        padding: 32px;
+    }
+
+    section#reviews .swiper-button-next{
+        top: var(--swiper-navigation-top-offset, 455px);
+        right: var(--swiper-navigation-sides-offset, 32px);
+    }
+    section#reviews .swiper-button-prev{
+        top: var(--swiper-navigation-top-offset, 455px);
+        right: var(--swiper-navigation-sides-offset, 96px);
+    }
 }
 
-@media screen and (min-width: 128px) {
+@media screen and (min-width: 1280px) {
     .reviews-section{
         margin-top: 80px;
+    }
+    section#reviews .swiper-button-next{
+        top: var(--swiper-navigation-top-offset, 475px);
+
+    }
+    section#reviews .swiper-button-prev{
+        top: var(--swiper-navigation-top-offset, 475px);
+
     }
 }
