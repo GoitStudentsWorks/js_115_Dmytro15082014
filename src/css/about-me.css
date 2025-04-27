@@ -1,0 +1,133 @@
+.about-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-title {
+    font-family: "Impact", sans-serif;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.about-img {
+    border-radius: 16px;
+}
+
+.about-section {
+    max-width: 320px;
+
+}
+
+.about-section-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.about-section-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 24px;
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.about-icon {
+    display: inline-block;
+    border-radius: 1px;
+    fill: #00B068;
+    flex-shrink: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    .about-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px 32px;
+
+        background-image: url(../img/bg-img/decor\ bg\ 6-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: 336px 252px;
+        background-position: right 8px bottom 156px;
+    }
+
+    .about-title {
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+    }
+
+    .about-section-title {
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: 0.01em;
+    }
+
+    .about-img {
+        margin-top: 368px;
+    }
+
+    .about-section {
+        max-width: 336px;
+    }
+
+    .about-list {
+        gap: 16px;
+    }
+
+}
+
+
+
+@media (min-width: 1280px) {
+    .about-wrap {
+        margin-left: 208px;
+        gap: 80px 136px;
+        background-image: url(../img/bg-img/decor\ bg\ 2-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: 384px 288px;
+        background-position: right 32px bottom 264px;
+
+    }
+
+
+    .about-img {
+        margin-top: 272px;
+    }
+
+    .about-section.bio {
+        max-width: 488px;
+
+    }
+
+    .about-section {
+        max-width: 384px;
+    }
+}
