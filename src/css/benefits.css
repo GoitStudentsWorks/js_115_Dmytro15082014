@@ -1,8 +1,18 @@
 
-.benefits-title-container {}
+.container {
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 .benefits-title {
-    /* font-family: "Impact", sans-serif; */
+    font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 1.23;
@@ -49,7 +59,7 @@
 }
 
 .benefits-list-title {
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
@@ -64,4 +74,90 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
+}
+
+@media screen and (min-width: 768px) {
+
+    .benefits-title {
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+    }
+
+    .benefits-list-container {
+        padding-top: 0px;
+    }
+
+    .benefits-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+    }
+
+    .benefits-list li:first-child {
+        grid-column: 2 / 3;
+    }
+
+    .benefits-list-item {
+        max-width: 336px;
+    }
+
+    .benefits-list-title {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .container {
+        position: relative;
+    }
+
+    .benefits-title-container {
+        position: relative;
+        width: 681px;
+    }
+
+    .benefits-title-container::after {
+        content: "";
+            position: absolute;
+            top: 5%;
+            left: 108%;
+            transform: translateY(-35%);
+            width: 526px;
+            height: 408px;
+            background-image: url('../img/bg-img/decor\ bg\ 3-desktop.webp');
+            background-size: cover;
+            /* Покриває всю область */
+            background-position: center;
+        }
+
+    .benefits-list-container {
+        position: absolute;
+        top: 100%;
+        left: auto;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-30%);
+        z-index: 10;
+    }
+
+    .benefits-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefits-list li:first-child {
+        grid-column: 3 / 4;
+    }
+
+    .benefits-list li:nth-child(2) {
+        grid-column: 1 / 2;
+    }
+
+    .benefits-list-item {
+    max-width: 384px;
+    }
 }
