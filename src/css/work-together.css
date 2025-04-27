@@ -1,6 +1,11 @@
 /* Contact us styles. */
 #section-contact-us {
   padding-top: 60px;
+  /* background-color: #1e2023; */
+}
+
+.conteiner {
+  background-color: #1e2023;
 }
 
 .lloyd-contact {
@@ -44,8 +49,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 24px;
-  margin: 0px;
   color: #f0f0f0;
   background-color: #1e2023;
 }
@@ -87,18 +90,15 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 18px;
   width: 100%;
 }
 
 .contact-input {
   border: 1px solid rgba(12, 12, 12, 0.15);
-  border-radius: 12px;
-  padding: 12px 12px 12px 14px;
+  border-radius: 8px;
   width: 100%;
-  height: 42px;
+  color: #f0f0f0;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
@@ -106,16 +106,14 @@
     padding: 16px 16px 16px 16px;
     width: 460px;
     height: 52px;
+    background-color: #2a2d32;
   }
-}
-.contact-input:focus {
-  border-color: #4d5ae5;
 }
 
 .button-send {
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 12px 50px;
-  min-width: 134px;
+  width: 100%;
   height: 42px;
   background-color: #14c57c;
   border: none;
@@ -143,31 +141,29 @@
   }
 }
 .button-send:hover {
-  background-color: #14c57c;
+  background-color: #009156;
 }
 
 ::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
-  color: #0c0c0c;
+  color: #fbfbfb;
 }
 
 .contact-textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
-  color: #0c0c0c;
+  color: #fbfbfb;
   resize: none;
   overflow: auto;
   border: 1px solid rgba(12, 12, 12, 0.15);
-  border-radius: 12px;
+  border-radius: 8px;
   width: 100%;
-  height: 84px;
-  background-color: transparent;
-  padding: 12px 20px 54px 14px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 128px;
+  background-color: #2a2d32;
+  /* padding: 12px 20px 12px 14px; */
 }
 @media screen and (min-width: 768px) {
   .contact-textarea {
@@ -184,15 +180,15 @@
   }
 }
 
-.contact-textarea:focus {
+/* .contact-textarea:focus {
   border-color: #4d5ae5;
-}
+} */
 
 .contact-textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
-  color: #0c0c0c;
+  color: #fbfbfb;
 }
 .contact-body {
   display: flex;
@@ -200,7 +196,7 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .contact-body {
@@ -224,11 +220,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  border-radius: 30px;
-  padding: 48px 28px;
-  max-width: 100%;
-  background: #f3f3f3;
-  gap: 28px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #1e2023;
 }
 @media screen and (min-width: 768px) {
   .info-window {
@@ -250,12 +244,15 @@
   .contact-row {
     height: 42px;
     width: 100%;
+    background-color: #2a2d32;
   }
 }
 @media screen and (max-width: 767px) {
   .contact-row-comment {
     height: 84px;
     width: 100%;
+    color: #f0f0f0;
+    background-color: #2a2d32;
   }
 }
 @media screen and (min-width: 768px) {
