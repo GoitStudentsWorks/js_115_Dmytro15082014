@@ -15,10 +15,12 @@
 }
 @font-face {
   font-family: "Impact";
-  src: url("/src/fonts/impact.ttf");
+  src: url("../fonts/impact.ttf");
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
