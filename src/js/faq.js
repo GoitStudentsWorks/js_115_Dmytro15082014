@@ -1,22 +1,22 @@
-const triggers = document.querySelectorAll('.accordion-trigger');
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+  trigger.addEventListener('click', function () {
+    const item = this.parentElement;
+    const content = item.querySelector('.accordion-content');
 
-triggers.forEach(trigger => {
-  trigger.addEventListener('click', () => {
-    const isActive = trigger.classList.contains('active');
-    
-    // Закрыть все
-    triggers.forEach(t => {
-      t.classList.remove('active');
-      t.parentElement.classList.remove('open');
-      t.nextElementSibling.style.maxHeight = null;
-      t.nextElementSibling.classList.remove('open');
-    });
-    
-    // Открыть, если не был активным
-    if (!isActive) {
-      trigger.classList.add('active');
-      trigger.parentElement.classList.add('open');
-      const content = trigger.nextElementSibling;
+    if (item.classList.contains('open')) {
+      item.classList.remove('open');
+      this.classList.remove('active');
+      content.style.maxHeight = null;
+      content.classList.remove('open');
+    } else {
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.accordion-trigger').classList.remove('active');
+        i.querySelector('.accordion-content').style.maxHeight = null;
+        i.querySelector('.accordion-content').classList.remove('open');
+      });
+      item.classList.add('open');
+      this.classList.add('active');
       content.classList.add('open');
       content.style.maxHeight = content.scrollHeight + "px";
     }
