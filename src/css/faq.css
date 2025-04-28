@@ -11,70 +11,41 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 
+.ac .ac-trigger::after {
+  content: none !important;
+}
+
 #faq h2 span {
   display: block;
   color: #00B068;
 }
 
-.accordion {
+.ac {
+  
+  background-color: transparent !important;
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.ac-trigger:focus{
+  color: black !important;
 
-.accordion-item {
+}
+
+.ac-trigger {
+  padding: 0px !important; 
+}
+
+.ac-item {
+  padding: 28px 24px 28px 24px;
   border-radius: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
+  border: 1px solid #ccc;
+
   overflow: hidden;
 }
 
-.accordion-item:first-child {
-  border-top: none;
-}
-
-.accordion-trigger {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 28px 24px;
-  text-align: left;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  transition: background-color 0.3s;
-}
-
-.accordion-icon {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  font-size: 18px;
-}
-
-.accordion-trigger.active .accordion-icon {
-  transform: rotate(180deg);
-}
-
-.accordion-content-title {
-  font-weight: 400;
-font-size: 18px;
-line-height: 156%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-max-width: 244px;
-}
-
-.accordion-content {
-  max-height: 0;
+.ac-panel {
+ 
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
   font-family: "Poppins", sans-serif;
@@ -84,12 +55,85 @@ max-width: 244px;
   letter-spacing: 0.03em;
 }
 
-.accordion-content.open {
-  padding: 20px;
+.ac .ac-trigger::after {
+    content: "+";
+    text-align: center;
+    width: 15px;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
 }
 
-.accordion-item.open {
+
+.ac-item.is-active {
   background-color: #BCDFD1;
+}
+
+
+.ac-trigger {
+  padding: 0 !important;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-title {
+  
+  font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-title p {
+  font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.accordion-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent; /* Цвет фона для квадратика */
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Вращение иконки при открытии */
+.ac-item.is-active .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+/* Немного улучшений для панели */
+.ac-panel {
+  padding-top: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.ac-panel {
+  padding: 0 !important;
 }
 
 @media only screen and (max-width: 1279px){
@@ -100,6 +144,18 @@ max-width: 244px;
 }
 
 @media only screen and (min-width: 767px) {
+  .accordion-title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
   .accordion-content-title {
     max-width: 600px;
     
@@ -116,6 +172,18 @@ text-transform: uppercase;
 
 
 @media only screen and (min-width: 1279px) {
+    
+
+    .ac{
+      margin-top: auto;
+      max-width: 592px;
+
+    }
+
+    .accordion-icon{
+      margin-bottom: 20px;
+    }
+
     .faq-decor{
     display: block;
     width: 564px;
@@ -132,6 +200,8 @@ text-transform: uppercase;
 
     .faq-decor{
       margin-top: 240px;
+      width: 526;
+      height: 408px;
     }
     
     #faq .container{
