@@ -47,30 +47,67 @@ const reviewsData = [
   ];
 
   // create exemplar class reviews
-  const reviewList = reviewsData.map(item => new Reviews(item));
-  
+  /*const reviewList = reviewsData.map(item => new Reviews(item));*/
+
+  async function loadReviews() {
+    try {
+        const reviewList = await fetchReviews(reviewsData);
+        
   // creale and join HTML text for </ul>
-  reviewsLists.innerHTML = reviewList.map(
-    item => `<li class="review-cart swiper-slide">
-    <p class = "review-text">${item.review}</p>
-    <div class="review-bottom">
-    <img class="review-avatar"
-        src=${item.icon}
-        srcset="${item.icon} 1x, ${item.icon2x} 2x"
-        width="40"
-        height="40"
-        alt="${item.name}"
-      />
-    <p class = "review-autor">${item.name}</p>
-    </div>
-    </li>`
-  ).join('');
+        reviewsLists.innerHTML = reviewList.map(
+        item => `<li class="review-cart swiper-slide">
+        <div class="review-inner">
+        <p class = "review-text">${item.review}</p>
+        <div class="review-bottom">
+        <img class="review-avatar"
+            src=${item.icon}
+            srcset="${item.icon} 1x, ${item.icon2x} 2x"
+            width="40"
+            height="40"
+            alt="${item.name}"
+        />
+        <p class = "review-autor">${item.name}</p>
+        </div>
+        </div>
+        </li>`
+        ).join('');
+    } catch(error){
+
+    iziToast.error({
+        title: 'Error',
+        message: 'Sorry, something went wrong. Please try again later.',
+        position: 'topRight',
+      });
+  
+      // Малюємо заглушку "Not found"
+       reviewsLists.innerHTML = `<li class="review-cart swiper-slide">
+        <div class="review-inner">
+        <p class="review-text">Not found</p>
+        </div>
+      </li>`;      
+    }
+}
+
+// function parse data
+  async function fetchReviews(data) {
+    
+    try{
+        const reviewList = await data.map(item => new Reviews(item));
+
+        return reviewList;
+    } catch(error){
+        throw error;
+    }
+  }
+
+  // start load reviews
+  loadReviews();
 
   // for use swiper list reviews
   const swiper = new Swiper('.swiper',{
     modules: [Navigation,Keyboard],
     loop: false,
-    spaceBetween: 40,
+    spaceBetween: 32,
     slidesPerView: 1,
     navigation: {
         nextEl:'.swiper-button-next',
