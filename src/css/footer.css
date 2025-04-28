@@ -6,7 +6,8 @@
 }
 
 .footer-logo {
-  color: #000000;
+  color: #f0f0f0;
+  font-size: 32px;
 }
 
 .footer-fixed {
@@ -32,14 +33,16 @@
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 8px 16px;
 }
 
 .footer-menu-item {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 133%;
-  color: #000000;
+  /* font-family: Poppins; */
+  /* font-weight: 200px; */
+  font-size: 16px;
+  line-height: 100%;
+  color: #f0f0f0;
   max-width: 83px;
 }
 
@@ -67,6 +70,7 @@
 
 .regulation-menu-item:first-child {
   flex-basis: 100%;
+  color: #f0f0f0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -119,7 +123,7 @@
   }
 
   .regulation-menu {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 129%;
     gap: 20px;
   }
