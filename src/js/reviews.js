@@ -88,7 +88,7 @@ const reviewsData = [
     }
 }
 
-// function parse data
+// function parse
   async function fetchReviews(data) {
     
     try{
