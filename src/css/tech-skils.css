@@ -1,0 +1,93 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.skills-wrap {
+    display: flex;
+  
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    
+}   
+
+.skills-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 32px 0;
+    white-space: nowrap;
+    animation: skillsLine 10s linear infinite;
+}
+
+.box-1{
+    background-color: #bcdfd1;
+    color: #292929;
+    fill: #00B068;
+}
+
+.box-2{
+    background-color: #e4e5e6;
+    animation: skillsLineRotate 10s linear infinite;        
+}
+
+.skills-icon {
+    display: inline-block;
+    stroke-width: 0;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+
+
+@media screen and (min-width:768px){
+    .skills-wrap{
+        font-size: 36px;
+        line-height: 1.33;
+    }
+
+    .skills-box{
+        padding: 40px 0;
+    }
+
+}
+
+
+ 
+
+
+
+@keyframes skillsLine {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} 
+
+@keyframes skillsLineRotate {
+    0% {
+        transform: translateX(0) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(-100%) rotate(2deg);
+    }
+}
