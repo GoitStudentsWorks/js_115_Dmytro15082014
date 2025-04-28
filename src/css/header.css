@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -45,7 +45,7 @@ body {
     src: url('/fonts/impact.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-}
+} */
 
 
 .container {
@@ -63,6 +63,7 @@ body {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #292929;
+        white-space: nowrap;
 }
 
 .header-logo-span{
