@@ -12,3 +12,6 @@ import 'accordion-js/dist/accordion.min.css';
       activeClass: 'is-active' // класс для открытого элемента
     });
   });
+
+
+  
