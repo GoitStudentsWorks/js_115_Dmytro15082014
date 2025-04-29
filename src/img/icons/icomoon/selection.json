@@ -1,0 +1,181 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M96 288c0 353.451 286.549 640 640 640h96c25.459 0 49.877-10.116 67.883-28.117 18.001-18.005 28.117-42.423 28.117-67.883v-58.539c0-22.016-14.976-41.216-36.352-46.549l-188.715-47.189c-18.773-4.693-38.485 2.347-50.048 17.792l-41.387 55.168c-12.032 16.043-32.811 23.125-51.627 16.213-69.85-25.681-133.284-66.236-185.908-118.861s-93.18-116.058-118.86-185.907c-6.912-18.816 0.171-39.595 16.213-51.627l55.168-41.387c15.488-11.563 22.485-31.317 17.792-50.048l-47.189-188.715c-2.597-10.381-8.588-19.597-17.022-26.183s-18.827-10.166-29.527-10.169h-58.539c-25.461 0-49.879 10.114-67.882 28.118s-28.118 42.421-28.118 67.882v96z"
+        ],
+        "attrs": [
+          {
+            "fill": "none",
+            "stroke": "rgb(0, 176, 104)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 42.666666666666664
+          }
+        ],
+        "width": 8277,
+        "grid": 0,
+        "tags": [
+          "phone"
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": true
+      },
+      "attrs": [
+        {
+          "fill": "none",
+          "stroke": "rgb(0, 176, 104)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 42.666666666666664
+        }
+      ],
+      "properties": {
+        "order": 15,
+        "id": 3,
+        "name": "phone",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M928 288v448c0 25.459-10.116 49.877-28.117 67.883-18.005 18.001-42.423 28.117-67.883 28.117h-640c-25.461 0-49.879-10.116-67.882-28.117-18.004-18.005-28.118-42.423-28.118-67.883v-448M928 288c0-25.461-10.116-49.879-28.117-67.882-18.005-18.004-42.423-28.118-67.883-28.118h-640c-25.461 0-49.879 10.114-67.882 28.118s-28.118 42.421-28.118 67.882M928 288v10.368c0 16.39-4.194 32.508-12.186 46.818s-19.511 26.336-33.468 34.931l-320 196.907c-15.138 9.323-32.567 14.259-50.347 14.259s-35.209-4.937-50.347-14.259l-320-196.864c-13.955-8.596-25.478-20.621-33.469-34.931s-12.186-30.428-12.184-46.818v-10.411"
+        ],
+        "attrs": [
+          {
+            "fill": "none",
+            "stroke": "rgb(0, 176, 104)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 42.666666666666664
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "email"
+        ]
+      },
+      "attrs": [
+        {
+          "fill": "none",
+          "stroke": "rgb(0, 176, 104)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 42.666666666666664
+        }
+      ],
+      "properties": {
+        "order": 16,
+        "id": 2,
+        "name": "email",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M640 448c0 33.946-13.487 66.505-37.491 90.509s-56.563 37.491-90.509 37.491c-33.946 0-66.505-13.487-90.51-37.491s-37.49-56.563-37.49-90.509c0-33.948 13.486-66.505 37.49-90.51s56.564-37.49 90.51-37.49c33.946 0 66.505 13.486 90.509 37.49s37.491 56.562 37.491 90.51v0z",
+          "M832 448c0 304.725-320 480-320 480s-320-175.275-320-480c0-84.869 33.714-166.263 93.726-226.274s141.406-93.726 226.274-93.726c84.868 0 166.263 33.714 226.274 93.726s93.726 141.405 93.726 226.274v0z"
+        ],
+        "attrs": [
+          {
+            "fill": "none",
+            "stroke": "rgb(0, 176, 104)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 42.666666666666664
+          },
+          {
+            "fill": "none",
+            "stroke": "rgb(0, 176, 104)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 42.666666666666664
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "geo-point"
+        ]
+      },
+      "attrs": [
+        {
+          "fill": "none",
+          "stroke": "rgb(0, 176, 104)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 42.666666666666664
+        },
+        {
+          "fill": "none",
+          "stroke": "rgb(0, 176, 104)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 42.666666666666664
+        }
+      ],
+      "properties": {
+        "order": 17,
+        "id": 1,
+        "name": "geo-point",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 2
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "showGrid": false
+  }
+}
