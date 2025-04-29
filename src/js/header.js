@@ -4,20 +4,19 @@ const closeMenuBtn = document.querySelector('.mobile-menu-close');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuLinks = document.querySelectorAll('.menu-mobile-item a'); // Тепер шукаємо посилання <a> всередині елементів
 
+// Функція відкриття меню
+function openMenu() {
+    mobileMenu.classList.add('is-open');
+    document.body.style.overflow = 'hidden'; // Заборона скролу сторінки
+}
+
+// Функція закриття меню
+function closeMenu() {
+    mobileMenu.classList.remove('is-open');
+    document.body.style.overflow = ''; // Повертаємо скрол
+}
 // Перевіряємо, чи елементи існують
-if (openMenuBtn && closeMenuBtn && mobileMenu) {
-
-    // Функція відкриття меню
-    function openMenu() {
-        mobileMenu.classList.add('is-open');
-        document.body.style.overflow = 'hidden'; // Заборона скролу сторінки
-    }
-
-    // Функція закриття меню
-    function closeMenu() {
-        mobileMenu.classList.remove('is-open');
-        document.body.style.overflow = ''; // Повертаємо скрол
-    }
+if (openMenuBtn && closeMenuBtn && mobileMenu) {   
 
     // Відкриваємо меню при кліку на бургер
     openMenuBtn.addEventListener('click', openMenu);
