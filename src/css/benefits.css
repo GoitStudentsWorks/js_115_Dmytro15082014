@@ -1,14 +1,6 @@
 
-.container {
-    box-sizing: border-box;
-    word-break: break-word;
+.benefits-container {
     overflow-wrap: break-word;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
 }
 
 .benefits-title {
@@ -112,7 +104,7 @@
 
 @media screen and (min-width: 1280px) {
 
-    .container {
+    .benefits-container {
         position: relative;
     }
 
@@ -136,7 +128,6 @@
         }
 
     .benefits-list-container {
-        position: absolute;
         top: 100%;
         left: auto;
         width: 100%;

@@ -19,6 +19,8 @@
 }
 
 .swiper-buttons{
+    position: absolute;
+    right: 5%;
     margin-top: 36px;
     display: flex;
     justify-content: flex-end;
