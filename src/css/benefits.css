@@ -121,7 +121,7 @@
             transform: translateY(-35%);
             width: 526px;
             height: 408px;
-            background-image: url('../img/bg-img/decor\ bg\ 3-desktop.webp');
+            background-image: url(/img/bg-img/decor3-desktop.webp);
             background-size: cover;
             /* Покриває всю область */
             background-position: center;
