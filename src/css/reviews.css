@@ -110,12 +110,12 @@ section#reviews .swiper-button-next
     }
     .reviews-section{
         margin-top: 60px;
-        margin-left: 32px;
-        margin-right: 32px;
+       /* margin-left: 32px;
+        margin-right: 32px;*/
     }
 
     .swiper{
-        padding: 32px;
+       /* padding: 32px;*/
     }
 
     .review-cart{
