@@ -1,3 +1,4 @@
+import "./js/swiper-bundle.min";
 import "./js/api";
 import "./js/header";
 import "./js/modal";
