@@ -53,6 +53,8 @@ body {
         padding:16px 20px 16px 20px;
         margin-right: auto;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
 .header-logo{
@@ -76,6 +78,9 @@ body {
 
 .open-menu-btn{
     margin-left: 108px;
+    margin-right: 20px;
+    border: none;
+    
 }
 
 
@@ -120,6 +125,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-width: 320px;
+        padding: 16px 20px 16px 20px;
+        margin-right: auto;
 
 }
 
@@ -129,10 +137,10 @@ body {
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
+    border: none;
     padding: 0;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #fff;
     display: flex;
     justify-content: center;
