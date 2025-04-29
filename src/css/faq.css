@@ -1,14 +1,15 @@
 #faq h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 40px;
   /* text-align: center; */
   margin-bottom: 40px;
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 400;
-font-size: 52px;
-line-height: 123%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .ac .ac-trigger::after {
@@ -74,7 +75,7 @@ text-transform: uppercase;
   background-color: #BCDFD1;
 }
 
-.ac-item:has(+ .ac-item.is-active) {
+.ac-item:has(.ac-item.is-active) {
   border-bottom: none;
 }
 
@@ -190,10 +191,10 @@ text-transform: uppercase;
 
   #faq h2 {
     font-weight: 400;
-font-size: 108px;
-line-height: 115%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 }
 
@@ -201,9 +202,9 @@ text-transform: uppercase;
 @media only screen and (min-width: 1279px) {
     .accordion-title{
       font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-letter-spacing: 0.03em;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 0.03em;
     }
 
     .ac{
@@ -224,10 +225,10 @@ letter-spacing: 0.03em;
       width: 530px;
       margin: 0px;
       font-weight: 400;
-  font-size: 108px;
-  line-height: 115%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+      font-size: 108px;
+      line-height: 115%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
     }
 
     .faq-decor{
@@ -238,7 +239,7 @@ letter-spacing: 0.03em;
     
     #faq .container{
       display: grid;
-  grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     .accordion{
       margin-top: 276px;
