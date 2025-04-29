@@ -105,6 +105,7 @@ text-transform: uppercase;
 }
 
 .accordion-icon {
+  margin-bottom: auto;
   width: 32px;
   height: 32px;
   display: flex;
@@ -112,19 +113,25 @@ text-transform: uppercase;
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: transparent; /* Цвет фона для квадратика */
+  background-color: transparent; 
   border-radius: 8px;
   font-size: 16px;
   transition: transform 0.3s ease;
 }
 
-/* Вращение иконки при открытии */
+
 .ac-item.is-active .accordion-icon {
   transform: rotate(-180deg);
 }
 
-/* Немного улучшений для панели */
+
+.ac-panel p{
+  margin-top: 24px;
+}
+
 .ac-panel {
+  
+  padding: 0 !important;
   padding-top: 12px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -132,9 +139,6 @@ text-transform: uppercase;
 }
 
 
-.ac-panel {
-  padding: 0 !important;
-}
 
 @media only screen and (max-width: 1279px){
   .faq-decor{
