@@ -24,7 +24,6 @@
 }
 
 .about-section-title {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.25;
@@ -35,7 +34,6 @@
 }
 
 .about-section-text {
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     letter-spacing: 0.03em;
     color: #292929;
@@ -72,7 +70,7 @@
         flex-wrap: wrap;
         gap: 60px 32px;
 
-        background-image: url(/img/bg-img/decor\ bg\ 6-tablet.webp);
+        background-image: url(/img/bg-img/decor6-tablet.webp);
         background-repeat: no-repeat;
         background-size: 336px 252px;
         background-position: right 8px bottom 156px;
@@ -110,7 +108,7 @@
     .about-wrap {
         margin-left: 208px;
         gap: 80px 136px;
-        background-image: url(/img/bg-img/decor\ bg\ 6-tablet.webp);
+        background-image: url(/img/bg-img/decor6-tablet.webp);
         background-repeat: no-repeat;
         background-size: 384px 288px;
         background-position: right 32px bottom 264px;
