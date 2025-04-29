@@ -1,6 +1,6 @@
 /* Footer styles. */
-.span {
-  color: #14c57c;
+.accent-light {
+  color: #00b068;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
 }
 
 .footer-menu-item:hover {
-  color: #14c57c;
+  color: #00b068;
 }
 
 .footer-down {
