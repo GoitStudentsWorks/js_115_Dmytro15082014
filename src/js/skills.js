@@ -1,35 +1,39 @@
-// function Marquee(selector, speed) {
-//   const parentSelector = document.querySelector(selector);
-//   const clone = parentSelector.innerHTML;
-//   const firstElement = parentSelector.children[0];
-//   let i = 0;
-//   let marqueeInterval;
 
-//     parentSelector.insertAdjacentHTML('beforeend', clone);
-//     parentSelector.insertAdjacentHTML('beforeend', clone);
+function Marquee(selector, speed) {
+  const container = document.querySelector(selector);
+  const items = Array.from(container.children);
 
-//   function startMarquee() {
-//     marqueeInterval = setInterval(function () {
-//       firstElement.style.marginLeft = `-${i}px`;
-//       if (i > firstElement.light) {
-//         i = 0;
-//       }
-//       i = i + speed;
-//     }, 0);
-//   }
+    
+  const track = document.createElement('div');
+  track.classList.add('marquee-track');
+  items.forEach(item => track.appendChild(item.cloneNode(true)));
+  items.forEach(item => track.appendChild(item.cloneNode(true)));
 
-//   function stopMarquee() {
-//     clearInterval(marqueeInterval);
-//   }
+  container.innerHTML = '';
+  container.appendChild(track);
 
-//  parentSelector.addEventListener('mouseenter', stopMarquee);
-//   parentSelector.addEventListener('mouseleave', startMarquee);
+  let position = 0;
 
-//   startMarquee();
-// }
+  function animate() {
+    position -= speed;
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0;
+    }
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animate);
+  }
 
-// window.addEventListener('load', () => Marquee('.skills-box', 0.3));
+    
 
-// window.addEventListener('load', () => Marquee('.box-2', 0.5));
+  animate();
+}
 
 
+window.addEventListener('load', () => {
+  Marquee('.marquee-container', 0.5);
+});
+
+
+window.addEventListener('load', () => {
+  Marquee('.marquee-container.box-2', 0.9);
+});
