@@ -103,12 +103,11 @@ text-transform: uppercase;
 }
 
 .accordion-title {
-  
   font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,7 +127,6 @@ text-transform: uppercase;
 
 
 .accordion-icon {
-  padding: 8px;
   transition: transform 0.3s ease;
   flex-shrink: 0;
   margin-right: 0px;
@@ -201,7 +199,12 @@ text-transform: uppercase;
 
 
 @media only screen and (min-width: 1279px) {
-    
+    .accordion-title{
+      font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+letter-spacing: 0.03em;
+    }
 
     .ac{
       margin-top: auto;
