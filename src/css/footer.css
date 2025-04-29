@@ -10,14 +10,14 @@ a {
 
 .footer {
   font-family: 'Poppins', sans-serif;
-  background-color: #1e2023;
-  border-top: solid 1px #f0f0f0;
+  background-color: #f0f0f0;
+  border-top: solid 1px #e4e5e6;
   padding-top: 40px;
   font-weight: 400;
 }
 
 .footer-logo {
-  color: #f0f0f0;
+  color: #292929;
   font-size: 32px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 1.5px;
@@ -42,7 +42,7 @@ a {
   font-weight: lighter;
   font-size: 16px;
   line-height: 100%;
-  color: #f0f0f0;
+  color: #292929;
   max-width: 83px;
   letter-spacing: 0.6px;
 }
@@ -60,8 +60,8 @@ a {
 .regulation-menu {
   font-weight: lighter;
   font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.6px;
+  line-height: 100%;
+  letter-spacing: 0.5px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -72,10 +72,10 @@ a {
   font-weight: lighter;
   flex-direction: column;
   flex-basis: 100%;
-  color: #f0f0f0;
+  color: #292929;
   text-align: center;
-  margin: 16px 65px 24px 65px;
-  letter-spacing: 1.1;
+  margin: 16px 51.5px 24px 51.5px;
+  letter-spacing: 0.5px;
   line-height: 24px;
 }
 
@@ -127,9 +127,9 @@ a {
   .regulation-menu-item {
     flex-direction: row;
     font-size: 16px;
-    margin: 24px 12px 4px 340px;
-    gap: 0px;
-    letter-spacing: 1.2px;
+    margin: 24px 0px 4px 325px;
+    letter-spacing: 0.5px;
+    justify-content: end;
   }
 }
 
@@ -167,7 +167,7 @@ a {
 
   .regulation-menu-item {
     font-size: 16px;
-    margin: 40px 0px 4px 877px;
+    margin: 40px 0px 4px 857px;
     letter-spacing: 0.5px;
     text-align: right;
     text-align: right;
