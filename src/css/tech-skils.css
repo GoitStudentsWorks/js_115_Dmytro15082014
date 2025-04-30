@@ -1,0 +1,100 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.skills-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    
+}   
+
+.marquee-container {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 32px 0;
+}
+
+
+.marquee-track {
+    display: flex;
+    white-space: nowrap;
+    gap: 24px;
+    align-items: center;
+    will-change: transform;
+}
+
+
+.box-1{
+    background-color: #bcdfd1;
+    color: #292929;
+    fill: #00B068;
+}
+
+
+.skills-wrap.liner {
+    z-index: 2;
+    position: relative;
+}
+
+.skills-wrap.rotate{
+    transform: skewY(2deg);
+    z-index: 1;
+}
+
+.box-2{
+    transform: skewX(-2deg);
+    background-color: #e4e5e6;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    .skills-wrap{
+        font-size: 36px;
+        line-height: 1.33;
+    }
+
+    .marquee-container{
+        padding: 40px 0;
+    }
+
+}
+
+
+/* стилі для темного фону
+
+.box-1 {
+    background-color: #204136;
+    color:#f0f0f0;;
+    fill: #14c57c;
+}
+
+.box-2{
+    background-color: #2a2d32;
+    color: #14c57c;
+    fill: #f0f0f0;
+} */
