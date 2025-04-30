@@ -67,6 +67,7 @@ const reviewsData = [
             src=${item.icon}
             width="40"
             height="40"
+            srcset="${item.icon} 1x, ${item.icon2x} 2x"
             alt="${item.name}"
         />
         <p class = "review-autor">${item.name}</p>
