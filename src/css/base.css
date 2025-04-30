@@ -53,3 +53,49 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+/* Dart theme */
+body.dark-theme {
+  background-color: #1e2023;
+  color: #f0f0f0;
+}
+
+body.dark-theme * {
+  color: inherit;
+}
+
+.dark-theme .accent-light {
+  color: #14c57c;
+}
+
+.dark-theme button.ORDER-PROJECT {
+  background-color: #009156;
+}
+
+.dark-theme button.ORDER-PROJECT:hover {
+  background-color: #14c57c;
+}
+
+.dark-theme button.VISIT {
+  background-color: #2a2d32;
+}
+
+.dark-theme button.VISIT:hover {
+  background-color: #3b3f45;
+}
+/* Стилізація кнопки "Change to dark theme" */
+
+#theme-change {
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #00b068;
+  border: 1px solid #00b068;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme #theme-change {
+  color: #14c57c;
+}

@@ -47,3 +47,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Change theme
+const changeThemeButton = document.getElementById('theme-change');
+const body = document.body;
+
+changeThemeButton.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+
+  if (body.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
+});
