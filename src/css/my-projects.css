@@ -1,0 +1,245 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-header {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 64px; 
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    text-align: center;
+}
+
+.project-span-header {
+    color: #00b068;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.project-img {
+    width: 320px;
+    border-radius: 24px;
+}
+
+.project-technologies {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+}
+
+.visit-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 125px;
+    height: 48px;
+    background: #e4e5e6;
+    border-width: 0px;
+}
+
+.visit-button:hover,
+.visit-button:active {
+    background-color: #BBBBBB;
+}
+
+.project-load-more-btn:hover,
+.project-load-more-btn:active {
+    color: #00b068;
+}
+
+.visit-button,
+.project-load-more-btn {
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.project-button-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
+.projects-arrow-icon {
+    stroke-width: 2px;
+    stroke: #00b068;
+}
+
+.load-more-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-load-more-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55556;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 12px 24px;
+    width: 156px;
+    border-width: 0px;
+}
+
+.projects-arrow-btn-icon {
+    stroke-width: 2px;
+    stroke: #00b068;
+}
+
+.project-load-more-btn-text {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+
+    .project-header {
+            font-size: 108px;
+            line-height: 1.14815;
+        }
+    
+        .project-card {
+            gap: 16px;
+            margin-top: 40px;
+        }
+    
+        .project-img {
+            width: 704px;
+        }
+    
+        .project-technologies {
+            flex-direction: column;
+            gap: 32px;
+        }
+    
+        .project-title {
+            font-size: 36px;
+            line-height: 1.33;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #292929;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 16px;
+            width: 704px;
+        }
+    
+        .load-more-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+    
+        .project-load-more-btn {
+            font-size: 20px;
+            line-height: 1.6;
+            width: 168px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .project-header {
+            font-size: 108px;
+            line-height: 1.14815;
+        }
+    
+        .project-card {
+            gap: 16px;
+            margin-top: 80px;
+        }
+    
+        .project-img {
+            width: 1008px;
+        }
+    
+        .project-technologies {
+            flex-direction: column;
+            column-gap: 30px;
+            row-gap: 20px;
+        }
+    
+        .project-title {
+            font-size: 36px;
+            line-height: 1.33;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #292929;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 16px;
+            width: 1008px;
+        }
+    
+        .load-more-btn {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .project-load-more-btn {
+            font-size: 20px;
+            line-height: 1.6;
+            width: 168px;
+        }
+}
