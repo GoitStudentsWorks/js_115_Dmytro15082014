@@ -40,8 +40,8 @@
 .ac-item {
   padding: 28px 24px 28px 24px;
    padding: 28px 24px;
-  border: none; /* убираем старую рамку */
-  border-bottom: 1px solid #CCCCCC; /* добавляем нижнюю границу */
+  border: none; 
+  box-shadow: 0 1px 0 0 #CCCCCC;
   border-radius: 0;
   overflow: hidden;
 }
@@ -69,7 +69,7 @@
 
 
 .ac-item.is-active {
-  border-bottom: 0px solid #CCCCCC; /* добавляем нижнюю границу */
+  box-shadow: 0 0 0 0 #CCCCCC; 
   border-radius: 10px;
    border: 1px ;
   background-color: #BCDFD1;
@@ -114,16 +114,7 @@
   align-items: center;
 }
 
-.accordion-title p {
-  font-weight: 400;
-font-size: 18px;
-line-height: 156%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-}
+
 
 
 
@@ -163,6 +154,16 @@ text-transform: uppercase;
   margin: 0;
 }
 
+@media only screen and (min-width: 767px){
+  .accordion-title{
+    font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+  }
+
+}
 
 @media only screen and (max-width: 1279px){
   .faq-decor{
@@ -171,7 +172,14 @@ text-transform: uppercase;
 
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) and (max-width: 1279){
+  .accordion-title{
+    font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+  }
   .accordion-title p {
     font-weight: 400;
     font-size: 20px;
@@ -205,6 +213,11 @@ text-transform: uppercase;
       font-size: 20px;
       line-height: 160%;
       letter-spacing: 0.03em;
+    }
+
+
+    .el-1,.el-2,.el-3,.el-4{
+      max-height: 32px !important;
     }
 
     .ac{
