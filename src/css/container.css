@@ -12,7 +12,7 @@ section{
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    /* padding: 0 32px; */
   }
   section{
     margin: 124px 0px;
