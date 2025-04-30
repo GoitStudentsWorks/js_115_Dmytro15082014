@@ -139,7 +139,6 @@
 
      .header-nav-list{
         display: flex;
-        margin-left: 166px;
         gap: 40px;
 
      }
@@ -167,7 +166,6 @@
             }
             .header-nav-list{
              display: flex;
-             margin-left: 678px;
              gap: 40px;
             }
               .mobile-menu {
