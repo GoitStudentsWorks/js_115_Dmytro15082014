@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: "Impact";
-  src: url("/src/fonts/impact.ttf");
+  src: url("../fonts/impact.ttf");
 }
 
 body {

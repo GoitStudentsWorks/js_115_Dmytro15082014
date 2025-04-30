@@ -1,4 +1,11 @@
-.reviews-title{
+.review{
+    padding-bottom: 54px;
+}
+
+/*.reviews-title{*/
+#reviews .reviews-title{
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
     font-size: 52px;
     
     line-height: 1.23077;
