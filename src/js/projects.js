@@ -74,6 +74,7 @@ const projectsData = [
   const projectsList = document.querySelector(".projects-list");
   const loadMoreBtn = document.querySelector(".project-load-more-btn");
   const INITIAL_COUNT = 3;
+  let currentIndex = INITIAL_COUNT;
   let isExpanded = false;
 
   function createProjectCard(project) {
@@ -113,18 +114,19 @@ const projectsData = [
     });
   }
 
-  function loadRemainingProjects() {
-    if (isExpanded) return;
+  function loadMoreProjects() {
+  const nextProjects = projectsData.slice(currentIndex, currentIndex + 3);
+  nextProjects.forEach((project) => {
+    const card = createProjectCard(project);
+    projectsList.appendChild(card);
+  });
 
-    const remainingProjects = projectsData.slice(INITIAL_COUNT);
-    remainingProjects.forEach((project) => {
-      const card = createProjectCard(project);
-      projectsList.appendChild(card);
-    });
+  currentIndex += 3;
 
+  if (currentIndex >= projectsData.length) {
     loadMoreBtn.style.display = "none";
-    isExpanded = true;
   }
+}
 
   document.addEventListener("DOMContentLoaded", loadInitialProjects);
-  loadMoreBtn.addEventListener("click", loadRemainingProjects);
+  loadMoreBtn.addEventListener("click", loadMoreProjects);
