@@ -61,7 +61,6 @@ const reviewsData = [
         <div class="review-bottom">
         <img class="review-avatar"
             src=${item.icon}
-            srcset="${item.icon} 1x, ${item.icon2x} 2x"
             width="40"
             height="40"
             alt="${item.name}"
