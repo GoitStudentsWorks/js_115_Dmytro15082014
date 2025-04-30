@@ -84,6 +84,22 @@
     border-width: 0px;
 }
 
+.visit-button:hover,
+.visit-button:active {
+    background-color: #BBBBBB;
+}
+
+.project-load-more-btn:hover,
+.project-load-more-btn:active {
+    color: #00b068;
+}
+
+.visit-button,
+.project-load-more-btn {
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
 .project-button-text {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

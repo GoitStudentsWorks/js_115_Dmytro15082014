@@ -3,61 +3,71 @@ const projectsData = [
       imgSrc: "/img/projects/wallet-webservice.jpg",
       alt: "Wallet Webservice",
       technologies: "React, JavaScript, Node JS, Git",
-      title: "WALLET WEBSERVICE"
+      title: "WALLET WEBSERVICE",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/green-harvest-online-store.jpg",
       alt: "Green Harvest Webservice",
       technologies: "React, JavaScript, Node JS, Git",
-      title: "GREEN HARVEST WEBSERVICE"
+      title: "GREEN HARVEST WEBSERVICE",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/english-excellence-webservice.jpg",
       alt: "English Excellence Website",
       technologies: "React, JavaScript, Node JS, Git",
-      title: "ENGLISH EXCELLENCE WEBSITE"
+      title: "ENGLISH EXCELLENCE WEBSITE",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/power-pulse-webservice.jpg",
       alt: "power pulse webservice",
       technologies: "React, JavaScript, Express, MongoDB",
-      title: "power pulse webservice"
+      title: "power pulse webservice",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/mimino-website.jpg",
       alt: "mimino website",
       technologies: "Vue, JavaScript, Firebase",
-      title: "mimino website"
+      title: "mimino website",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/vyshyvanka-vibes-landing-page.jpg",
       alt: "vyshyvanka vibes Landing Page",
       technologies: "Angular, TypeScript, Node JS",
-      title: "vyshyvanka vibes Landing Page"
+      title: "vyshyvanka vibes Landing Page",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/chego-jewelry-website.jpg",
       alt: "chego jewelry website",
       technologies: "Angular, TypeScript, Node JS",
-      title: "chego jewelry website"
+      title: "chego jewelry website",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/energy-flow-webservice.jpg",
       alt: "energy flow webservice",
       technologies: "Angular, TypeScript, Node JS",
-      title: "energy flow webservice"
+      title: "energy flow webservice",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/fruitbox-online-store.jpg",
       alt: "fruitbox online store",
       technologies: "Angular, TypeScript, Node JS",
-      title: "fruitbox online store"
+      title: "fruitbox online store",
+      link: "https://www.youtube.com"
     },
     {
       imgSrc: "/img/projects/starlight-studio-landing-page.jpg",
       alt: "starlight studio landing page",
       technologies: "Angular, TypeScript, Node JS",
-      title: "starlight studio landing page"
+      title: "starlight studio landing page",
+      link: "https://www.youtube.com"
     }
   ];
 
@@ -85,8 +95,15 @@ const projectsData = [
         </div>
       </div>
     `;
+    const visitButton = li.querySelector(".visit-button");
+    visitButton.addEventListener("click", () => {
+        window.open(project.link, "_blank", "noopener,noreferrer");
+    });
+      
     return li;
-  }
+}
+  
+
 
   function loadInitialProjects() {
     const initialProjects = projectsData.slice(0, INITIAL_COUNT);
