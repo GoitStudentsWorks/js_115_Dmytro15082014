@@ -1,5 +1,5 @@
 
-function Marquee(selector, speed) {
+function marquee(selector, speed) {
   const container = document.querySelector(selector);
   const items = Array.from(container.children);
 
@@ -13,6 +13,7 @@ function Marquee(selector, speed) {
   container.appendChild(track);
 
   let position = 0;
+  animate();
 
   function animate() {
     position -= speed;
@@ -21,19 +22,15 @@ function Marquee(selector, speed) {
     }
     track.style.transform = `translateX(${position}px)`;
     requestAnimationFrame(animate);
-  }
-
-    
-
-  animate();
+  }  
 }
 
 
 window.addEventListener('load', () => {
-  Marquee('.marquee-container', 0.5);
+  marquee('.marquee-container', 0.5);
 });
 
 
 window.addEventListener('load', () => {
-  Marquee('.marquee-container.box-2', 0.9);
+  marquee('.marquee-container.box-2', 0.9);
 });
