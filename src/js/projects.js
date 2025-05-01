@@ -101,7 +101,7 @@ const projectsData = [
           <button class="visit-button">
             <p class="project-button-text">VISIT</p>
             <svg class="projects-arrow-icon" width="24" height="24">
-              <use href="/img/projects/arrow-icon.svg#arrow-icon"></use>
+              <use href="img/projects/arrow-icon.svg#arrow-icon"></use>
             </svg>
           </button>
         </div>
