@@ -1,0 +1,262 @@
+#faq h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  /* text-align: center; */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ac .ac-trigger::after {
+  content: none !important;
+}
+
+#faq h2 span {
+  display: block;
+  color: #00B068;
+}
+
+.ac {
+  
+  background-color: transparent !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ac-trigger:focus{
+  color: black !important;
+
+}
+
+.ac-trigger {
+  padding: 0px !important; 
+}
+
+.ac-item {
+  padding: 28px 24px 28px 24px;
+   padding: 28px 24px;
+  border: none; 
+  box-shadow: 0 1px 0 0 #CCCCCC;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.ac-panel {
+ 
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+
+.ac .ac-trigger::after {
+    content: "+";
+    text-align: center;
+    width: 15px;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+
+.ac-item.is-active {
+  box-shadow: 0 0 0 0 #CCCCCC; 
+  border-radius: 10px;
+   border: 1px ;
+  background-color: #BCDFD1;
+}
+
+.ac-item:has(.ac-item.is-active) {
+  border-bottom: none;
+}
+
+#faq .ac-trigger {
+  flex-direction: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  gap: 1rem;
+  padding: 0 !important;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-right: 0px;
+  margin-bottom: auto;
+
+}
+
+
+.ac-item.is-active .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+
+.ac-panel p{
+  margin-top: 24px;
+}
+
+.ac-panel {
+  
+  padding: 0 !important;
+  padding-top: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.accordion-title p {
+  font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  margin: 0;
+}
+
+@media only screen and (min-width: 767px){
+  .accordion-title{
+    font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+  }
+
+}
+
+@media only screen and (max-width: 1279px){
+  .faq-decor{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1279){
+  .accordion-title{
+    font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+  }
+  .accordion-title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
+  .accordion-content-title {
+    max-width: 600px;
+    
+  }
+
+  #faq h2 {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+
+@media only screen and (min-width: 1279px) {
+    .accordion-title{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      letter-spacing: 0.03em;
+    }
+
+
+    .el-1,.el-2,.el-3,.el-4{
+      max-height: 32px !important;
+    }
+
+    .ac{
+      margin-top: auto;
+      max-width: 592px;
+
+    }
+
+    .accordion-icon{
+      margin-bottom: 20px;
+    }
+
+    .faq-decor{
+    display: block;
+    width: 564px;
+    }
+    #faq h2 {
+      width: 530px;
+      margin: 0px;
+      font-weight: 400;
+      font-size: 108px;
+      line-height: 115%;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .faq-decor{
+      margin-top: 240px;
+      width: 526;
+      height: 408px;
+    }
+    
+    #faq .container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .accordion{
+      margin-top: 276px;
+      
+
+    }
+} 

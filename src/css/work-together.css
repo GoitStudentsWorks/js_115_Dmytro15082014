@@ -342,7 +342,6 @@ color: #292929;
       padding-top: 100px;
     }
     .contact-body {
-      width: 1216px;
       flex-direction: row;
       gap: 40px;
     }
@@ -466,5 +465,8 @@ color: #00b068;
       margin-right: 26px;
     }
   }
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> origin/main
