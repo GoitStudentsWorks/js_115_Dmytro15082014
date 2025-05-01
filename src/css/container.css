@@ -27,3 +27,7 @@ section{
       margin: 164px 0px;
     }
 }
+
+.dark .container{
+  background: #292929;
+}
