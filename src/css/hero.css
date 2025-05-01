@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+#hero{
+  margin-top: 0;
+}
 .container-hero {
   padding: 0;
 }
@@ -22,7 +24,7 @@ html {
 }
 
 .main-title {
-  font-family: 'Impact';
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 1.25;
@@ -87,8 +89,6 @@ html {
 .inspiration-text {
   width: 320px;
   height: 140px;
-  font-family: 'Poppins';
-  font-weight: 400;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
@@ -97,17 +97,19 @@ html {
   position: relative;
   top: 205px;
 }
-
+.social-media-container{
+    background-color: #e4e5e6;
+    max-height: 232px;
+}
 .social-media {
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 32px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
-  padding: 32px 0px;
-  width: 360px;
-  height: 168px;
-  background: #e4e5e6;
+  gap: 24px; 
 }
 
 .social-link:hover,
@@ -166,13 +168,14 @@ html {
     line-height: 160%;
     top: 200px;
   }
+  .social-media-container{
+    height: 104px;
+  }
 
   .social-media {
+    padding: 40px 0px;
     flex-direction: row;
     gap: 40px;
-    width: 768px;
-    padding: 40px 0px;
-    height: 24px;
   }
 
   .social-link:hover,
@@ -202,10 +205,6 @@ html {
     height: 108px;
     margin-left: 40px;
     margin-bottom: 25px;
-    border-radius: 15px;
-  }
-
-  .dev-jpg{
     border-radius: 15px;
   }
 
