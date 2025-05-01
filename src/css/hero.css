@@ -24,7 +24,7 @@ html {
 }
 
 .main-title {
-  font-family: 'Impact';
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 1.25;
@@ -89,8 +89,6 @@ html {
 .inspiration-text {
   width: 320px;
   height: 140px;
-  font-family: 'Poppins';
-  font-weight: 400;
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
@@ -99,17 +97,19 @@ html {
   position: relative;
   top: 205px;
 }
-
+.social-media-container{
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 32px 0px;
+    background-color: #e4e5e6;
+    min-height: 168px;
+}
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
-  padding: 32px 0px;
-  width: 360px;
-  height: 168px;
-  background: #e4e5e6;
+  gap: 24px; 
 }
 
 .social-link:hover,
@@ -168,13 +168,14 @@ html {
     line-height: 160%;
     top: 200px;
   }
+  .social-media-container{
+    padding: 40px 0px;
+    height: 104px;
+  }
 
   .social-media {
     flex-direction: row;
     gap: 40px;
-    width: 768px;
-    padding: 40px 0px;
-    height: 24px;
   }
 
   .social-link:hover,
