@@ -14,11 +14,19 @@
   -webkit-text-size-adjust: 100%;
 }
 @font-face {
-  font-family: "Impact";
-  src: url("/src/fonts/impact.ttf");
+  font-family: Impact;
+  src: url('../fonts/impact.ttf');
 }
 
 body {
+  font-family: Poppins, sans-serif;
+  font-family: Impact;
+  src: url('../fonts/impact.ttf');
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
@@ -27,16 +35,16 @@ body {
   background-color: #f0f0f0;
   transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.change-color{
-  background-color: #1E2023;
+.change-color {
+  background-color: #1e2023;
 }
 
-.accent-light{
-  color: #00B068;
+.accent-light {
+  color: #00b068;
 }
 
-.accent-dark{
-  color: #14C57C;
+.accent-dark {
+  color: #14c57c;
 }
 
 main {
@@ -46,3 +54,100 @@ main:has(.back-link) {
   text-align: center;
 }
 
+/* Dart theme */
+body.dark-theme {
+  background-color: #1e2023;
+  color: #f0f0f0;
+}
+
+body.dark-theme * {
+  color: inherit;
+}
+
+.dark-theme .accent-light {
+  color: #14c57c;
+}
+
+.dark-theme button.ORDER-PROJECT {
+  background-color: #009156;
+}
+
+.dark-theme button.ORDER-PROJECT:hover {
+  background-color: #14c57c;
+}
+
+.dark-theme button.VISIT {
+  background-color: #2a2d32;
+}
+
+.dark-theme button.VISIT:hover {
+  background-color: #3b3f45;
+}
+/* Стилізація кнопки "Change to dark theme" */
+.switch-theme{
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  border-radius: 16px;
+  width: 48px;
+  height: 24px;
+  padding: 4px 8px;
+}
+
+#theme-change {
+  opacity: 0;
+    width: 0;
+    height: 0;
+  
+  /* font-size: 14px;
+  background-color: transparent;
+  color: #00b068;
+  border: 1px solid #00b068;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E4E5E6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2px;
+  background-color: #00b068;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#theme-change:checked+.slider {
+  background-color: #292929;
+}
+
+#theme-change:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider {
+  border-radius: 30px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+.dark-theme #theme-change {
+  color: #14c57c;
+}

@@ -4,6 +4,13 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
+/*
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+import dmytro1x from "../img/reviews/dmytro.png";
+import dmytro2x from "../img/reviews/dmytro@2x.png";
+import natalya1x from "../img/reviews/natalia.png";
+import natalya2x from "../img/reviews/natalia@2x.png";
+*/
 
 const reviewsLists = document.querySelector('.swiper-wrapper');
 
