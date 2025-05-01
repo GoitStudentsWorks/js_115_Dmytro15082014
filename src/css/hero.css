@@ -34,7 +34,7 @@ html {
   width: 320px;
 }
 
-.web-dev {
+.web-dev-jpg {
   display: none;
 }
 
@@ -194,7 +194,7 @@ html {
     height: 772px;
   }
 
-  .web-dev {
+  .web-dev-jpg {
     display: block;
     position: absolute;
     left: 599px;
