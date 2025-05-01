@@ -1,15 +1,11 @@
 #faq h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 40px;
-  /* text-align: center; */
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  line-height: 1.2;
   font-weight: 400;
   font-size: 52px;
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .ac .ac-trigger::after {
@@ -155,6 +151,12 @@ text-transform: uppercase;
 }
 
 @media only screen and (min-width: 767px){
+  #faq h2{
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
   .accordion-title{
     font-weight: 400;
   font-size: 20px;
