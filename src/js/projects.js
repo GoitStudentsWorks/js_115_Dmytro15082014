@@ -8,7 +8,7 @@ import chegoJewelry from "../img/projects/chego-jewelry-website.jpg";
 import energyFlow from "../img/projects/energy-flow-webservice.jpg";
 import fruitbox from "../img/projects/fruitbox-online-store.jpg";
 import starlightStudio from "../img/projects/starlight-studio-landing-page.jpg";
-import arrowBtn from "/img/projects/arrow-icon.svg";
+import arrowBtn from "../img/projects/arrow-icon.svg#arrow-icon";
 
 const projectsData = [
   {

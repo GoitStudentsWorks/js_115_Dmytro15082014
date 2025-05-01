@@ -88,6 +88,9 @@
 .project-load-more-btn:active {
     color: #00b068;
 }
+.projects-arrow{
+    fill: #00b068;
+}
 
 .visit-button,
 .project-load-more-btn {
