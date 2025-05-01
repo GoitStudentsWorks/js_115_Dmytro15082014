@@ -28,6 +28,11 @@
   padding: 0;
   margin: 0;
 }
+
+body.dark .ac {
+  border: transparent;
+}
+
 .ac-trigger:focus{
   color: black !important;
 
@@ -42,8 +47,13 @@
    padding: 28px 24px;
   border: none; 
   box-shadow: 0 1px 0 0 #CCCCCC;
-  border-radius: 0;
+  border-radius: 5px;
   overflow: hidden;
+}
+
+body.dark .ac-item{
+  box-shadow: 0 1px 0 0 #1E2023;
+  border-bottom: #f0f0f0 !important;
 }
 
 .ac-panel {
@@ -69,10 +79,10 @@
 
 
 .ac-item.is-active {
-  box-shadow: 0 0 0 0 #CCCCCC; 
+  box-shadow: 0 1px 0 0 #1E2023; 
   border-radius: 10px;
    border: 1px ;
-  background-color: #BCDFD1;
+  background: #204136;;
 }
 
 .ac-item:has(.ac-item.is-active) {
@@ -123,7 +133,10 @@
   flex-shrink: 0;
   margin-right: 0px;
   margin-bottom: auto;
+}
 
+body.dark .accordion-icon {
+  stroke: #f0f0f0;
 }
 
 

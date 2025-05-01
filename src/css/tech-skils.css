@@ -52,6 +52,12 @@
     fill: #00B068;
 }
 
+body.dark .box-1 {
+    background-color: #204136;
+    color: #f0f0f0;
+    fill: #14c57c;
+}
+
 
 .skills-wrap.liner {
     z-index: 2;
@@ -66,6 +72,12 @@
 .box-2{
     transform: skewX(-2deg);
     background-color: #e4e5e6;
+}
+
+body.dark .box-2 {
+    background-color: #2a2d32;
+    color: #14c57c;
+    fill: #f0f0f0;
 }
 
 

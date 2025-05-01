@@ -50,21 +50,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Change theme
 
-let slider = document.querySelector('.switch')
+let slider = document.querySelector('.switch');
 
-slider.addEventListener('change', changeTheme)
+slider.addEventListener('change', changeTheme);
 
 if (localStorage.getItem('darkMode') === 'true') {
     slider.checked = true;
-    document.body.classList.add('dark')
+    document.body.classList.add('dark');
 }
 
 function changeTheme() {
     if (slider.checked) {
-        document.body.classList.add('dark')
-        localStorage.setItem('darkMode', 'true')
+        document.body.classList.add('dark');
+        localStorage.setItem('darkMode', 'true');
     } else {
-        document.body.classList.remove('dark')
-        localStorage.setItem('darkMode', 'false')
+        document.body.classList.remove('dark');
+        localStorage.setItem('darkMode', 'false');
     }
 }

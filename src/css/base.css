@@ -37,7 +37,28 @@ body {
 }
 
 body.dark{
-  background: #292929;
+  background-color: #292929;
+  color: #f0f0f0;
+}
+
+body.dark p{
+  color: #f0f0f0;
+}
+
+body.dark h2{
+  color: #f0f0f0;
+}
+
+body.dark h1 {
+  color: #f0f0f0;
+}
+
+body.dark #hero {
+  background-color: #292929;
+}
+
+body.dark .swiper-container {
+  background-color: #3B3F45;
 }
 
 .change-color {
