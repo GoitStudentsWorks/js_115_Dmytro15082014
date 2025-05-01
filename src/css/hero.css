@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+#hero{
+  margin-top: 0;
+}
 .container-hero {
   padding: 0;
 }
@@ -45,7 +47,6 @@ html {
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #00b068;
 }
 
 .btn-box {
@@ -203,10 +204,6 @@ html {
     height: 108px;
     margin-left: 40px;
     margin-bottom: 25px;
-    border-radius: 15px;
-  }
-
-  .dev-jpg{
     border-radius: 15px;
   }
 

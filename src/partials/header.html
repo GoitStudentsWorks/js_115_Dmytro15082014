@@ -3,9 +3,15 @@
     <a href="#home" class="header-logo"
       >Lloyd<span class="accent-light">Jefferson.</span></a
     >
-
     <nav class="header-nav">
       <ul class="header-nav-list">
+        <li>
+          <label class="switch-theme"
+            ><input type="checkbox" id="theme-change" type="button" /><span
+              class="slider"
+            ></span
+          ></label>
+        </li>
         <li class="menu-mobile-item">
           <a href="#about">About me</a>
         </li>
@@ -19,7 +25,7 @@
     </nav>
     <button class="open-menu-btn" type="button">
       <svg width="32" height="32" class="burger">
-        <use href="../img/header-svg/Vector-4.svg"></use>
+        <use href="/img/header-svg/header-icons.svg#mobile-menu-btn"></use>
       </svg>
     </button>
   </div>
@@ -30,14 +36,16 @@
       </a>
       <button class="mobile-menu-close">
         <svg class="modal-close-btn-icon" width="32" height="32">
-          <use href="/img/header-svg/close.svg"></use>
+          <use href="/img/header-svg/header-icons.svg#close"></use>
         </svg>
       </button>
       <nav class="mobile-menu-nav">
         <ul class="menu-mobile-list">
           <li class="menu-mobile-item"><a href="#about">About me</a></li>
           <li class="menu-mobile-item"><a href="#projects">Projects</a></li>
-          <li class="menu-mobile-item"><a href="#contacts">Contacts</a></li>
+          <li class="menu-mobile-item">
+            <a href="#work-together">Contacts</a>
+          </li>
         </ul>
       </nav>
     </div>
