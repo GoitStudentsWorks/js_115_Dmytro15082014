@@ -11,6 +11,13 @@
     overflow: hidden;
 }
 
+.skills-container{
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: 2560px;
+}
+
 .skills-wrap {
     position: relative;
     display: flex;
