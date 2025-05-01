@@ -5,19 +5,14 @@
 }
 
 .project-header {
-    font-family: "Impact", sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 64px; 
-    line-height: 1.23077;
+    line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
     text-align: center;
-}
-
-.project-span-header {
-    color: #00b068;
 }
 
 .projects-list {
@@ -124,7 +119,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.55556;
+    line-height: 1.555;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
@@ -152,7 +147,7 @@
 
     .project-header {
             font-size: 108px;
-            line-height: 1.14815;
+            line-height: 1.148;
         }
     
         .project-card {
@@ -197,11 +192,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-    .project-header {
-            font-size: 108px;
-            line-height: 1.14815;
-        }
     
         .project-card {
             gap: 16px;

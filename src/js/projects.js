@@ -8,6 +8,7 @@ import chegoJewelry from "../img/projects/chego-jewelry-website.jpg";
 import energyFlow from "../img/projects/energy-flow-webservice.jpg";
 import fruitbox from "../img/projects/fruitbox-online-store.jpg";
 import starlightStudio from "../img/projects/starlight-studio-landing-page.jpg";
+import arrowBtn from "../img/projects/arrow-icon.svg";
 
 const projectsData = [
   {
@@ -100,8 +101,8 @@ const projectsData = [
           ${project.title}
           <button class="visit-button">
             <p class="project-button-text">VISIT</p>
-            <svg class="projects-arrow-icon" width="24" height="24">
-              <use href="img/projects/arrow-icon.svg#arrow-icon"></use>
+            <svg class="projects-arrow-icon" width="18" height="18">
+              <use href="${arrowBtn}#arrow-icon"></use>
             </svg>
           </button>
         </div>
