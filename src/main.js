@@ -7,4 +7,5 @@ import "./js/projects";
 import "./js/reviews";
 import "./js/skills";
 import "./js/faq";
+import "./js/work-together";
 
