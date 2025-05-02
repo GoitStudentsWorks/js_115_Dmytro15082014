@@ -161,6 +161,13 @@ body.dark .visit-button:active {
 body.dark .project-load-more-btn-text {
     color: #f0f0f0;
 }
+body.dark .visit-button,
+body.dark .project-load-more-btn{
+    color: #f0f0f0;
+}
+body.dark .project-load-more-btn:hover{
+    color: #14C57C;
+}
 
 @media screen and (min-width: 768px) {
 
