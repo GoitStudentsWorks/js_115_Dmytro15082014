@@ -10,9 +10,21 @@ import fruitbox from "../img/projects/fruitbox-online-store.jpg";
 import starlightStudio from "../img/projects/starlight-studio-landing-page.jpg";
 import arrowBtn from "../img/projects/arrow-icon.svg#arrow-icon";
 
+import wallet2x from "../img/projects/wallet-webservice@2x.jpg";
+import greenHarvest2x from "../img/projects/green-harvest-online-store@2x.jpg";
+import englishExcellence2x from "../img/projects/english-excellence-webservice@2x.jpg";
+import powerPulse2x from "../img/projects/power-pulse-webservice@2x.jpg";
+import mimino2x from "../img/projects/mimino-website@2x.jpg";
+import vyshyvankaVibes2x from "../img/projects/vyshyvanka-vibes-landing-page@2x.jpg";
+import chegoJewelry2x from "../img/projects/chego-jewelry-website@2x.jpg";
+import energyFlow2x from "../img/projects/energy-flow-webservice@2x.jpg";
+import fruitbox2x from "../img/projects/fruitbox-online-store@2x.jpg";
+import starlightStudio2x from "../img/projects/starlight-studio-landing-page@2x.jpg";
+
 const projectsData = [
   {
     imgSrc: wallet,
+    imgSrcset: wallet2x,
     alt: "Wallet Webservice",
     technologies: "React, JavaScript, Node JS, Git",
     title: "WALLET WEBSERVICE",
@@ -20,6 +32,7 @@ const projectsData = [
   },
   {
     imgSrc: greenHarvest,
+    imgSrcset: greenHarvest2x,
     alt: "Green Harvest Webservice",
     technologies: "React, JavaScript, Node JS, Git",
     title: "GREEN HARVEST WEBSERVICE",
@@ -27,6 +40,7 @@ const projectsData = [
   },
   {
     imgSrc: englishExcellence,
+    imgSrcset: englishExcellence2x,
     alt: "English Excellence Website",
     technologies: "React, JavaScript, Node JS, Git",
     title: "ENGLISH EXCELLENCE WEBSITE",
@@ -34,6 +48,7 @@ const projectsData = [
   },
   {
     imgSrc: powerPulse,
+    imgSrcset: powerPulse2x,
     alt: "Power Pulse Webservice",
     technologies: "React, JavaScript, Express, MongoDB",
     title: "POWER PULSE WEBSERVICE",
@@ -41,6 +56,7 @@ const projectsData = [
   },
   {
     imgSrc: mimino,
+    imgSrcset: mimino2x,
     alt: "Mimino Website",
     technologies: "Vue, JavaScript, Firebase",
     title: "MIMINO WEBSITE",
@@ -48,6 +64,7 @@ const projectsData = [
   },
   {
     imgSrc: vyshyvankaVibes,
+    imgSrcset: vyshyvankaVibes2x,
     alt: "Vyshyvanka Vibes Landing Page",
     technologies: "Angular, TypeScript, Node JS",
     title: "VYSHYVANKA VIBES LANDING PAGE",
@@ -55,6 +72,7 @@ const projectsData = [
   },
   {
     imgSrc: chegoJewelry,
+    imgSrcset: chegoJewelry2x,
     alt: "Chego Jewelry Website",
     technologies: "Angular, TypeScript, Node JS",
     title: "CHEGO JEWELRY WEBSITE",
@@ -62,6 +80,7 @@ const projectsData = [
   },
   {
     imgSrc: energyFlow,
+    imgSrcset: energyFlow2x,
     alt: "Energy Flow Webservice",
     technologies: "Angular, TypeScript, Node JS",
     title: "ENERGY FLOW WEBSERVICE",
@@ -69,6 +88,7 @@ const projectsData = [
   },
   {
     imgSrc: fruitbox,
+    imgSrcset: fruitbox2x,
     alt: "Fruitbox Online Store",
     technologies: "Angular, TypeScript, Node JS",
     title: "FRUITBOX ONLINE STORE",
@@ -76,6 +96,7 @@ const projectsData = [
   },
   {
     imgSrc: starlightStudio,
+    imgSrcset: starlightStudio2x,
     alt: "Starlight Studio Landing Page",
     technologies: "Angular, TypeScript, Node JS",
     title: "STARLIGHT STUDIO LANDING PAGE",
@@ -89,16 +110,19 @@ const projectsData = [
   let currentIndex = INITIAL_COUNT;
   let isExpanded = false;
 
-  function createProjectCard(project) {
+  function createProjectCard( { imgSrc, imgSrcset, alt, technologies, title, link}) {
     const li = document.createElement("li");
     li.className = "project-card";
 
     li.innerHTML = `
-      <img class="project-img" src="${project.imgSrc}" alt="${project.alt}" />
+      <img class="project-img"
+        src="${imgSrcset}"
+        srcset="${imgSrcset} 2x, ${imgSrc} 1x"
+        alt="${alt}" />
       <div class="project-technologies">
-        <p>${project.technologies}</p>
+        <p>${technologies}</p>
         <div class="project-title">
-          <p>${project.title}</p>
+          <p>${title}</p>
           <button class="visit-button">
             <p class="project-button-text">VISIT</p>
             <svg class="projects-arrow-icon" width="18" height="18">
@@ -110,7 +134,7 @@ const projectsData = [
     `;
     const visitButton = li.querySelector(".visit-button");
     visitButton.addEventListener("click", () => {
-        window.open(project.link, "_blank", "noopener,noreferrer");
+        window.open(link, "_blank", "noopener,noreferrer");
     });
       
     return li;

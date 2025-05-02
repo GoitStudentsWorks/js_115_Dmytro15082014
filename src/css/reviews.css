@@ -91,7 +91,7 @@ body.dark .swiper-button-next-svg {
     border-radius: 16px;
     overflow: hidden;
     width: 100%;
-    min-height: 296px;
+    height: 420px;
     background-color: #e4e5e6;
 
     line-height: 1.5;
@@ -146,7 +146,7 @@ body.dark .review-cart {
         margin-top: 60px;
     }
     .review-cart{
-       min-height: 224px;
+       height: 224px;
     }
 
     section#reviews .swiper-button-next{
