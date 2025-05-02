@@ -34,7 +34,7 @@ html {
   color: #292929;
   position: relative;
   top: 102px;
-  width: 320px;
+  min-width: 320px;
 }
 
 .web-dev-jpg {
@@ -154,7 +154,7 @@ body.dark .social-media-container{
     font-size: 136px;
     line-height: 115%;
     letter-spacing: 0.01em;
-    width: 704px;
+    min-width: 704px;
     top: 88px;
   }
   .head-wrap {
@@ -229,7 +229,7 @@ body.dark .social-media-container{
 
   .main-title {
     top: 155px;
-    width: 1210px;
+    min-width: 1210px;
   }
 
   .title-first {
