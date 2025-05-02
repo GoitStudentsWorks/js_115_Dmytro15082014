@@ -40,15 +40,14 @@ body.dark .ac {
 
 .ac-item {
   padding: 28px 24px 28px 24px;
-   padding: 28px 24px;
+  padding: 28px 24px;
   border: none; 
   box-shadow: 0 1px 0 0 #CCCCCC;
-  border-radius: 5px;
   overflow: hidden;
+  margin-top: 2px;
 }
 
 body.dark .ac-item{
-  box-shadow: 0 1px 0 0 #1E2023;
   border-bottom: #f0f0f0 !important;
 }
 
@@ -75,10 +74,16 @@ body.dark .ac-item{
 
 
 .ac-item.is-active {
-  box-shadow: 0 1px 0 0 #1E2023; 
+  /* box-shadow: 0 1px 0 0 #1E2023;  */
   border-radius: 10px;
-   border: 1px ;
-  background: #204136;;
+  border: 1px ;
+  background-color: #BCDFD1;;
+}
+
+body.dark .ac-item.is-active{
+  border: none;
+  background-color: #204136;
+  box-shadow: none;
 }
 
 .ac-item:has(.ac-item.is-active) {
@@ -130,9 +135,12 @@ body.dark .ac-item{
   margin-right: 0px;
   margin-bottom: auto;
 }
+body.dark .accordion-title{
+  color: #F0F0F0;
+}
 
 body.dark .accordion-icon {
-  stroke: #f0f0f0;
+  fill: #f0f0f0;
 }
 
 
