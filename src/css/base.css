@@ -17,7 +17,10 @@
   font-family: Impact;
   src: url('../fonts/impact.ttf');
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   font-family: Poppins, sans-serif;
   font-family: Impact;
