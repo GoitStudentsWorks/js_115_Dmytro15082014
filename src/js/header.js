@@ -50,7 +50,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Change theme
 
-let slider = document.querySelector('.switch');
+const slider = document.querySelector('.switch');
 
 slider.addEventListener('change', changeTheme);
 

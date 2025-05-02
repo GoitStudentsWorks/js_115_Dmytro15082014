@@ -133,6 +133,13 @@ body.dark-theme * {
   cursor: pointer;
   transition: background-color 0.3s ease; */
 }
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  align-self: center;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -156,11 +163,11 @@ body.dark-theme * {
   transition: 0.4s;
 }
 
-#theme-change:checked+.slider {
+.switch:checked + .slider {
   background-color: #292929;
 }
 
-#theme-change:checked+.slider:before {
+.switch:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -174,6 +181,6 @@ body.dark-theme * {
   border-radius: 50%;
 }
 
-.dark-theme #theme-change {
+.dark-theme #toggle {
   color: #14c57c;
 }
