@@ -38,7 +38,7 @@
     flex-direction: column;
     color: #f0f0f0;
     gap: 40px;
-}
+  }
   .contact-text {
     font-weight: lighter;
     font-size: 18px;
@@ -84,7 +84,9 @@
     margin-top: 4px;
     padding-left: 4px;
   }
-  
+  body.dark .email-error{
+    color: #e74a3b;
+  }
    .decor {
     display: none;
   } 
@@ -161,7 +163,20 @@
       position: relative;
       width: 100%;
     }
+  body.dark .contact-form input, 
+  body.dark .contact-form textarea{
+    background-color: #2A2D32;
+    color: #f0f0f0;
+  }
   
+   body.dark .button-send{
+    background-color: #14C57C;
+   }
+
+    body.dark .button-send:hover {
+      background-color: #009156;
+    }
+
   .contact-input {
 
     border-radius: 8px;
@@ -185,11 +200,20 @@
   .contact-input::placeholder {
     color: #292929;
   }
+  body.dark .contact-input::placeholder {
+      color: #E4E5E6;
+  }
 
   .contact-form input:focus,
   .contact-form textarea:focus {
   outline: none;  /* Вимикає синій контур (outline) */
   border: 0px solid #ffffff;
+}
+
+body.dark .contact-form input:focus,
+body.dark .contact-form textarea:focus{
+  background-color: #2A2D32;
+  color: #f0f0f0;
 }
 
 .icon-status {
@@ -291,6 +315,9 @@
  .contact-textarea::placeholder {
     color: #292929;
   }    
+    body.dark .contact-textarea::placeholder {
+      color: #E4E5E6;
+    }
 
   @media screen and (min-width: 768px) {
     .contact-textarea {

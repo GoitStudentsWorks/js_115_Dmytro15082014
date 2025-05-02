@@ -15,13 +15,18 @@ a {
   padding-top: 40px;
   font-weight: 400;
 }
-
+body.dark footer{
+  background-color: #292929;
+}
 .footer-logo {
   color: #292929;
   font-size: 32px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.5;
   font-weight: 400;
+}
+body.dark .footer-logo{
+  color: #f0f0f0;
 }
 
 .footer-main {
@@ -49,6 +54,14 @@ a {
 
 .footer-menu-item:hover {
   color: #00b068;
+}
+
+body.dark .footer-menu-item{
+  color: #f0f0f0;
+}
+
+body.dark .footer-menu-item:hover {
+  color: #14C57C;
 }
 
 .footer-down {
