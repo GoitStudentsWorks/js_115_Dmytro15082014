@@ -128,8 +128,8 @@ body.dark .btn-box:hover {
   gap: 24px; 
 }
 
-body.dark .social-media{
-  background: #2a2d32;
+body.dark .social-media-container{
+  background-color: #2a2d32;
 }
 
 .social-link:hover,

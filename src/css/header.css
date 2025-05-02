@@ -15,6 +15,7 @@
     text-transform: uppercase;
     color: #292929;
     white-space: nowrap;
+    display: flex;
 }
 
 .header-nav-list{
@@ -107,6 +108,7 @@ body.dark .mobile-menu-close{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #292929;
+    display: flex;
   }
 
   .mobile-menu-nav{
