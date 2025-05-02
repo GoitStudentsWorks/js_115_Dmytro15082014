@@ -1,1 +1,70 @@
-<!-- <section id="work-together"></section> -->
+<section id="work-together">
+  <div class="container worktogether-background">
+    <div class="contact-us">
+      <h2 class="h2-contact-us">
+        Let's<span class="accent-light"> work together</span>
+      </h2>
+      <div class="contact-body">
+        <div class="lloyd-contact">
+          <p class="contact-text">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+          <div class="wt-contacts">
+            <div class="icon-contact">
+              <svg width="24" height="24">
+                <use href="/img/icons-gr-15.svg#icon-work_together_phone"></use>
+              </svg>
+              <p>+38 090 456 78 90</p>
+            </div>
+            <div class="icon-contact">
+              <svg width="24" height="24">
+                <use
+                  href="/img/icons-gr-15.svg#icon-work_together_letter"
+                ></use>
+              </svg>
+              <p>lloydjefferson@gmail.com</p>
+            </div>
+            <div class="icon-contact">
+              <svg width="24" height="24">
+                <use
+                  href="/img/icons-gr-15.svg#icon-work_together_location"
+                ></use>
+              </svg>
+              <p>USA, New York</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-window">
+          <form class="contact-form">
+            <div class="contact-email">
+              <input
+                type="email"
+                name="user-email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                id="user-email"
+                class="contact-input"
+                placeholder="Your email*"
+                required
+              />
+              <span class="icon-status" id="email-status"></span>
+
+              <p class="email-error" id="email-error" hidden>
+                Invalid email, try again
+              </p>
+            </div>
+
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="contact-textarea"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button class="button-send" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
