@@ -96,9 +96,9 @@ const projectsData = [
     li.innerHTML = `
       <img class="project-img" src="${project.imgSrc}" alt="${project.alt}" />
       <div class="project-technologies">
-        ${project.technologies}
+        <p>${project.technologies}</p>
         <div class="project-title">
-          ${project.title}
+          <p>${project.title}</p>
           <button class="visit-button">
             <p class="project-button-text">VISIT</p>
             <svg class="projects-arrow-icon" width="18" height="18">

@@ -50,22 +50,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Change theme
 
-// const changeThemeButton = document.getElementById('theme-change');
-// const body = document.body;
+let slider = document.querySelector('.switch');
 
-// changeThemeButton.addEventListener('click', () => {
-//   body.classList.toggle('dark-theme');
+slider.addEventListener('change', changeTheme);
 
-//   if (body.classList.contains('dark-theme')) {
-//     localStorage.setItem('theme', 'dark');
-//   } else {
-//     localStorage.setItem('theme', 'light');
-//   }
-// });
+if (localStorage.getItem('darkMode') === 'true') {
+    slider.checked = true;
+    document.body.classList.add('dark');
+}
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const savedTheme = localStorage.getItem('theme');
-//   if (savedTheme === 'dark') {
-//     document.body.classList.add('dark-theme');
-//   }
-// });
+function changeTheme() {
+    if (slider.checked) {
+        document.body.classList.add('dark');
+        localStorage.setItem('darkMode', 'true');
+    } else {
+        document.body.classList.remove('dark');
+        localStorage.setItem('darkMode', 'false');
+    }
+}

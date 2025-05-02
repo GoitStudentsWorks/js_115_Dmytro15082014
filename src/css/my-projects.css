@@ -79,6 +79,15 @@
     border-width: 0px;
 }
 
+body.dark .visit-button {
+    background-color: #2A2D32;
+}
+
+body.dark .visit-button:hover,
+body.dark .visit-button:active {
+    background-color: #3B3F45;
+}
+
 .visit-button:hover,
 .visit-button:active {
     background-color: #BBBBBB;
@@ -134,7 +143,10 @@
     padding: 12px 24px;
     width: 156px;
     border-width: 0px;
+    background: transparent;
 }
+
+
 
 .projects-arrow-btn-icon {
     stroke-width: 2px;
@@ -144,6 +156,10 @@
 .project-load-more-btn-text {
     display: flex;
     flex-wrap: nowrap;
+}
+
+body.dark .project-load-more-btn-text {
+    color: #f0f0f0;
 }
 
 @media screen and (min-width: 768px) {

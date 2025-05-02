@@ -61,6 +61,10 @@ html {
   border-radius: 16px;
 }
 
+body.dark .btn-box{
+  background-color: #009156;
+}
+
 .btn-order-text {
   position: relative;
   top: 30px;
@@ -75,6 +79,11 @@ html {
   text-transform: uppercase;
   color: #292929;
 }
+
+body.dark .btn-order-text {
+  color: #f0f0f0;
+}
+
 .btn-arrow {
   position: relative;
   right: 149px;
@@ -85,6 +94,10 @@ html {
 .btn-box:hover {
   background-color: #009156;
   color: white;
+}
+
+body.dark .btn-box:hover {
+  background-color: #14C57C;
 }
 
 .inspiration-text {
@@ -98,10 +111,12 @@ html {
   position: relative;
   top: 205px;
 }
+
 .social-media-container{
     background-color: #e4e5e6;
     max-height: 232px;
 }
+
 .social-media {
   margin: 0 auto;
   min-width: 320px;
@@ -111,6 +126,10 @@ html {
   justify-content: center;
   flex-direction: column;
   gap: 24px; 
+}
+
+body.dark .social-media{
+  background: #2a2d32;
 }
 
 .social-link:hover,
