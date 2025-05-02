@@ -19,7 +19,7 @@ html {
 .background-frame {
   width: 360px;
   height: 736px;
-  background-image: url(../img/bg-img/heromob.png);
+  background-image: url(/img/bg-img/heromob.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -147,7 +147,7 @@ body.dark .social-media-container{
   .background-frame {
     width: 768px;
     height: 928px;
-    background-image: url(../img/bg-img/Herotab.png);
+    background-image: url(/img/bg-img/Herotab.png);
   }
 
   .main-title {

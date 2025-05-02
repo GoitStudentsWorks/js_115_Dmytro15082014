@@ -49,6 +49,13 @@
     stroke: #00B068;
     fill: none;
 }
+body.dark .benefits-icons-box{
+    background-color: #204136;
+}
+body.dark .benefits-icons{
+    stroke: #00B068;
+    fill: #204136;
+}
 
 .benefits-list-title {
     font-family: "Poppins", sans-serif;
